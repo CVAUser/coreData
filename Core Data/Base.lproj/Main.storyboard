@@ -19,43 +19,57 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bqs-tk-hai">
-                                <rect key="frame" x="20" y="50" width="335" height="30"/>
+                                <rect key="frame" x="20" y="91" width="335" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6n3-JX-AUx">
-                                <rect key="frame" x="20" y="100" width="335" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVo-9e-doC">
-                                <rect key="frame" x="150" y="170" width="75" height="30"/>
+                                <rect key="frame" x="150" y="141" width="75" height="30"/>
                                 <state key="normal" title="Save name"/>
                                 <connections>
                                     <action selector="saveName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j9S-ct-cyn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEN-0m-GhS">
-                                <rect key="frame" x="147.5" y="120" width="80" height="30"/>
+                                <rect key="frame" x="20" y="141" width="80" height="30"/>
                                 <state key="normal" title="Show name"/>
                                 <connections>
                                     <action selector="showName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oZ1-ku-D20"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ye-Sw-RBv">
+                                <rect key="frame" x="20" y="50" width="54.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIE-q7-tXR">
+                                <rect key="frame" x="268" y="141" width="87" height="30"/>
+                                <state key="normal" title="Delete name"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6n3-JX-AUx">
+                                <rect key="frame" x="77.5" y="50" width="0.0" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6n3-JX-AUx" firstAttribute="top" secondItem="Bqs-tk-hai" secondAttribute="bottom" constant="20" id="34k-Bl-xce"/>
-                            <constraint firstItem="SEN-0m-GhS" firstAttribute="top" secondItem="6n3-JX-AUx" secondAttribute="bottom" constant="20" id="8Mx-TO-Q6f"/>
-                            <constraint firstItem="SEN-0m-GhS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DCQ-8Z-f69"/>
+                            <constraint firstItem="ZIE-q7-tXR" firstAttribute="top" secondItem="Bqs-tk-hai" secondAttribute="bottom" constant="20" id="3qP-vo-NpE"/>
+                            <constraint firstItem="Bqs-tk-hai" firstAttribute="top" secondItem="7ye-Sw-RBv" secondAttribute="bottom" constant="20" id="5Hg-Kb-Ds4"/>
+                            <constraint firstItem="VVo-9e-doC" firstAttribute="top" secondItem="Bqs-tk-hai" secondAttribute="bottom" constant="20" id="6zo-Ol-JzL"/>
+                            <constraint firstItem="Bqs-tk-hai" firstAttribute="top" secondItem="6n3-JX-AUx" secondAttribute="bottom" constant="20" id="BZB-dX-gUB"/>
+                            <constraint firstItem="7ye-Sw-RBv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="EfY-84-whh"/>
                             <constraint firstItem="VVo-9e-doC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FLY-pC-A1j"/>
-                            <constraint firstItem="VVo-9e-doC" firstAttribute="top" secondItem="SEN-0m-GhS" secondAttribute="bottom" constant="20" id="GfW-Ib-v0u"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6n3-JX-AUx" secondAttribute="trailing" constant="20" id="ISp-FU-I9X"/>
-                            <constraint firstItem="6n3-JX-AUx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ite-BT-lQG"/>
                             <constraint firstItem="Bqs-tk-hai" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XLQ-yB-kzk"/>
-                            <constraint firstItem="Bqs-tk-hai" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="xW1-dB-73S"/>
+                            <constraint firstItem="6n3-JX-AUx" firstAttribute="leading" secondItem="7ye-Sw-RBv" secondAttribute="trailing" constant="3" id="YNJ-g2-xuA"/>
+                            <constraint firstItem="6n3-JX-AUx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="gM5-SF-cId"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZIE-q7-tXR" secondAttribute="trailing" constant="20" id="iRy-dY-kSk"/>
+                            <constraint firstItem="SEN-0m-GhS" firstAttribute="top" secondItem="Bqs-tk-hai" secondAttribute="bottom" constant="20" id="lt9-Tx-mLG"/>
+                            <constraint firstItem="SEN-0m-GhS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="s2K-4b-EWg"/>
+                            <constraint firstItem="7ye-Sw-RBv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="x3D-qW-402"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bqs-tk-hai" secondAttribute="trailing" constant="20" id="zy1-xq-85X"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
