@@ -38,6 +38,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.person?.name = self.displayName.text
         self.saveContext()
     }
+    @IBAction func deleteName(_ sender: Any) {
+        self.person?.name = nil
+        self.saveContext()
+    }
     
     
 //    NSPersistentContainer passed from the outside and stored in local container variable
