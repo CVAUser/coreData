@@ -13,14 +13,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var displayName: UILabel!
     
-    var container: NSPersistentContainer!
-    var moc: NSManagedObjectContext?
+    weak var container: NSPersistentContainer!
+    weak var moc: NSManagedObjectContext!
     var person: PersonMO?
     
     @IBAction func showName(_ sender: Any) {
         do {
             let employeesFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
-            let fetchedEmployees = try moc!.fetch(employeesFetch) as! [PersonMO]
+            let fetchedEmployees = try moc.fetch(employeesFetch) as! [PersonMO]
             print(fetchedEmployees)
             if fetchedEmployees.isEmpty {
                 print("Employe array is empty")
