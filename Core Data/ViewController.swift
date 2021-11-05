@@ -14,7 +14,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var displayName: UILabel!
     
     weak var container: NSPersistentContainer!
-    weak var moc: NSManagedObjectContext!
+    var moc: NSManagedObjectContext!
     var person: PersonMO?
     
     @IBAction func showName(_ sender: Any) {
