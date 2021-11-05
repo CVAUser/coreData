@@ -26,7 +26,9 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVo-9e-doC">
                                 <rect key="frame" x="150" y="141" width="75" height="30"/>
-                                <state key="normal" title="Save name"/>
+                                <state key="normal" title="Save name">
+                                    <color key="titleColor" name="systemGreenColor" catalog="System" colorSpace="catalog"/>
+                                </state>
                                 <connections>
                                     <action selector="saveName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j9S-ct-cyn"/>
                                 </connections>
@@ -46,7 +48,9 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIE-q7-tXR">
                                 <rect key="frame" x="268" y="141" width="87" height="30"/>
-                                <state key="normal" title="Delete name"/>
+                                <state key="normal" title="Delete name">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6n3-JX-AUx">
                                 <rect key="frame" x="77.5" y="50" width="0.0" height="21"/>
