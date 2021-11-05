@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+//        Pass a Persistent Container Reference to a View Controller
         if let rootVC = window?.rootViewController as? ViewController {
             rootVC.container = persistentContainer
         }

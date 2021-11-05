@@ -13,12 +13,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var nameFild: UITextField!
     @IBOutlet weak var displayName: UILabel!
     @IBAction func showName(_ sender: Any) {
-        
-        let employeesFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
-        
         do {
+            let employeesFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
             let fetchedEmployees = try moc!.fetch(employeesFetch) as! [PersonMO]
-            self.displayName.text = fetchedEmployees.first?.name
+            print(fetchedEmployees)
+            if fetchedEmployees.isEmpty {
+                print("Employe array is empty")
+                self.person = PersonMO(context: moc!)
+            }
+            person = fetchedEmployees.first
+            self.displayName.text = person?.name
             print(fetchedEmployees.count)
         } catch {
             fatalError("Failed to fetch employees: \(error)")
@@ -32,6 +36,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var container: NSPersistentContainer!
     var moc: NSManagedObjectContext?
     var person: PersonMO?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,8 +45,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
             fatalError("This view needs a persistent container.")
         }
         self.moc = container.viewContext
-        self.person = PersonMO(context: moc!)
-        
     }
     func saveContext () {
         let context = self.container.viewContext

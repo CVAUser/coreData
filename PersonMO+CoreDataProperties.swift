@@ -2,7 +2,7 @@
 //  PersonMO+CoreDataProperties.swift
 //  Core Data
 //
-//  Created by Slava on 01.11.2021.
+//  Created by Slava on 05.11.2021.
 //
 //
 
