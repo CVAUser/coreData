@@ -10,8 +10,13 @@ import CoreData
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var nameFild: UITextField!
+    @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var displayName: UILabel!
+    
+    var container: NSPersistentContainer!
+    var moc: NSManagedObjectContext?
+    var person: PersonMO?
+    
     @IBAction func showName(_ sender: Any) {
         do {
             let employeesFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
@@ -33,19 +38,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.person?.name = self.displayName.text
         self.saveContext()
     }
-    var container: NSPersistentContainer!
-    var moc: NSManagedObjectContext?
-    var person: PersonMO?
-
+    
+    
+//    NSPersistentContainer passed from the outside and stored in local container variable
+//    fatalError() generate a crash log and terminate aaplication.
+//    NSManagedObjectContext retrived from container and stored in local moc variable
+//    moc variable is general work object to fetch, store, update data
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.nameFild.delegate = self
+        self.nameField.delegate = self
         guard container != nil else {
             fatalError("This view needs a persistent container.")
         }
         self.moc = container.viewContext
     }
+    
+    
     func saveContext () {
         let context = self.container.viewContext
         if context.hasChanges {
@@ -63,11 +72,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
 }
 
+
 extension ViewController {
     func textFieldDidEndEditing(_ textField: UITextField) {
         self.displayName.text = textField.text!
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        return self.nameFild.resignFirstResponder()
+        return self.nameField.resignFirstResponder()
     }
 }

@@ -62,7 +62,7 @@
                     </view>
                     <connections>
                         <outlet property="displayName" destination="6n3-JX-AUx" id="7qE-EP-aGz"/>
-                        <outlet property="nameFild" destination="Bqs-tk-hai" id="i9V-0h-sOn"/>
+                        <outlet property="nameField" destination="Bqs-tk-hai" id="i9V-0h-sOn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
