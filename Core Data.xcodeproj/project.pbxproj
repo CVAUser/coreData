@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F934D8A62737197C0093616C /* Manager+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934D8A42737197C0093616C /* Manager+CoreDataClass.swift */; };
+		F934D8A72737197C0093616C /* Manager+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F934D8A52737197C0093616C /* Manager+CoreDataProperties.swift */; };
 		F949D02027307A4300A4E021 /* PersonMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F949D01E27307A4300A4E021 /* PersonMO+CoreDataClass.swift */; };
 		F949D02127307A4300A4E021 /* PersonMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F949D01F27307A4300A4E021 /* PersonMO+CoreDataProperties.swift */; };
 		F953FDB9272209D300FFD66E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F953FDB8272209D300FFD66E /* AppDelegate.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F934D8A42737197C0093616C /* Manager+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Manager+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F934D8A52737197C0093616C /* Manager+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Manager+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F949D01E27307A4300A4E021 /* PersonMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonMO+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F949D01F27307A4300A4E021 /* PersonMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F953FDB5272209D300FFD66E /* Core Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +48,8 @@
 		F953FDAC272209D300FFD66E = {
 			isa = PBXGroup;
 			children = (
+				F934D8A42737197C0093616C /* Manager+CoreDataClass.swift */,
+				F934D8A52737197C0093616C /* Manager+CoreDataProperties.swift */,
 				F949D01E27307A4300A4E021 /* PersonMO+CoreDataClass.swift */,
 				F949D01F27307A4300A4E021 /* PersonMO+CoreDataProperties.swift */,
 				F953FDB7272209D300FFD66E /* Core Data */,
@@ -144,8 +150,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F953FDBB272209D300FFD66E /* ViewController.swift in Sources */,
+				F934D8A62737197C0093616C /* Manager+CoreDataClass.swift in Sources */,
 				F953FDB9272209D300FFD66E /* AppDelegate.swift in Sources */,
 				F949D02027307A4300A4E021 /* PersonMO+CoreDataClass.swift in Sources */,
+				F934D8A72737197C0093616C /* Manager+CoreDataProperties.swift in Sources */,
 				F949D02127307A4300A4E021 /* PersonMO+CoreDataProperties.swift in Sources */,
 				F953FDC1272209D300FFD66E /* Core_Data.xcdatamodeld in Sources */,
 			);
