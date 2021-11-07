@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     weak var container: NSPersistentContainer!
     var moc: NSManagedObjectContext!
-    var user: PersonMO?
+    var person: PersonMO?
     
     @IBAction func showName(_ sender: Any) {
         do {
@@ -29,8 +29,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
 //                self.person = PersonMO(context: moc!)
 
             }
-            user = fetchedEmployees.first
-            self.displayName.text = user?.name
+            person = fetchedEmployees.first
+            self.displayName.text = person?.name
             print(fetchedEmployees.count)
         } catch {
             fatalError("Failed to fetch employees: \(error)")
@@ -38,11 +38,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func saveName(_ sender: Any) {
-        self.user?.name = self.displayName.text
+        self.person?.name = self.displayName.text
         self.saveContext()
     }
     @IBAction func deleteName(_ sender: Any) {
-        self.user?.name = nil
+        self.person?.name = nil
         self.saveContext()
     }
     
