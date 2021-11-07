@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F949D02027307A4300A4E021 /* PersonMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F949D01E27307A4300A4E021 /* PersonMO+CoreDataClass.swift */; };
-		F949D02127307A4300A4E021 /* PersonMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F949D01F27307A4300A4E021 /* PersonMO+CoreDataProperties.swift */; };
+		F949D02027307A4300A4E021 /* PersonManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F949D01E27307A4300A4E021 /* PersonManagedObject.swift */; };
+		F949D02127307A4300A4E021 /* PersonManagedObjectProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F949D01F27307A4300A4E021 /* PersonManagedObjectProperties.swift */; };
 		F953FDB9272209D300FFD66E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F953FDB8272209D300FFD66E /* AppDelegate.swift */; };
 		F953FDBB272209D300FFD66E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F953FDBA272209D300FFD66E /* ViewController.swift */; };
 		F953FDBE272209D300FFD66E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F953FDBC272209D300FFD66E /* Main.storyboard */; };
@@ -18,8 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F949D01E27307A4300A4E021 /* PersonMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonMO+CoreDataClass.swift"; sourceTree = "<group>"; };
-		F949D01F27307A4300A4E021 /* PersonMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F949D01E27307A4300A4E021 /* PersonManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonManagedObject.swift; sourceTree = "<group>"; };
+		F949D01F27307A4300A4E021 /* PersonManagedObjectProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonManagedObjectProperties.swift; sourceTree = "<group>"; };
 		F953FDB5272209D300FFD66E /* Core Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F953FDB8272209D300FFD66E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F953FDBA272209D300FFD66E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,8 +44,8 @@
 		F953FDAC272209D300FFD66E = {
 			isa = PBXGroup;
 			children = (
-				F949D01E27307A4300A4E021 /* PersonMO+CoreDataClass.swift */,
-				F949D01F27307A4300A4E021 /* PersonMO+CoreDataProperties.swift */,
+				F949D01E27307A4300A4E021 /* PersonManagedObject.swift */,
+				F949D01F27307A4300A4E021 /* PersonManagedObjectProperties.swift */,
 				F953FDB7272209D300FFD66E /* Core Data */,
 				F953FDB6272209D300FFD66E /* Products */,
 			);
@@ -145,8 +145,8 @@
 			files = (
 				F953FDBB272209D300FFD66E /* ViewController.swift in Sources */,
 				F953FDB9272209D300FFD66E /* AppDelegate.swift in Sources */,
-				F949D02027307A4300A4E021 /* PersonMO+CoreDataClass.swift in Sources */,
-				F949D02127307A4300A4E021 /* PersonMO+CoreDataProperties.swift in Sources */,
+				F949D02027307A4300A4E021 /* PersonManagedObject.swift in Sources */,
+				F949D02127307A4300A4E021 /* PersonManagedObjectProperties.swift in Sources */,
 				F953FDC1272209D300FFD66E /* Core_Data.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
