@@ -20,14 +20,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func showName(_ sender: Any) {
         do {
             let employeesFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
-//            let owner = "Slava"
-//            employeesFetch.predicate = NSPredicate(format: "name == %@", owner)
             let fetchedEmployees = try moc.fetch(employeesFetch) as! [PersonMO]
-            print(fetchedEmployees)
             if fetchedEmployees.isEmpty {
                 print("Employe array is empty")
-//                self.person = PersonMO(context: moc!)
-
+//                use this implementation only in test app
+                self.person = PersonMO(context: moc!)
             }
             person = fetchedEmployees.first
             self.displayName.text = person?.name
